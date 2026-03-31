@@ -105,6 +105,7 @@ const translations = {
     tag_sinais:       { pt: "Análise de Sinais", en: "Signal Analysis" },
     tag_viz:          { pt: "Visualização",      en: "Visualization" },
     tag_stats:        { pt: "Estatística",       en: "Statistics" },
+    tag_db:           { pt: "Banco de Dados",    en: "Databases" },
 
     // ── Projetos ──
     proj_label:    { pt: "Projetos",              en: "Projects" },
