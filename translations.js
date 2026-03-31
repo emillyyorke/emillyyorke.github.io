@@ -105,7 +105,6 @@ const translations = {
     tag_sinais:       { pt: "Análise de Sinais", en: "Signal Analysis" },
     tag_viz:          { pt: "Visualização",      en: "Visualization" },
     tag_stats:        { pt: "Estatística",       en: "Statistics" },
-    tag_db:           { pt: "Banco de Dados",    en: "Databases" },
 
     // ── Projetos ──
     proj_label:    { pt: "Projetos",              en: "Projects" },
@@ -129,6 +128,11 @@ const translations = {
     proj4_desc: {
         pt: "Desenvolvimento de uma API moderna utilizando GraphQL para gestão eficiente de um acervo de biblioteca. Implementação de consultas flexíveis e mutações para autores e livros, com foco em performance e estrutura de dados escalável.",
         en: "Development of a modern API using GraphQL for efficient library collection management. Implementation of flexible queries and mutations for authors and books, focusing on performance and scalable data structure."
+    },
+    proj5_title: { pt: "Portfólio Pessoal", en: "Personal Portfolio" },
+    proj5_desc: {
+        pt: "Desenvolvimento de um site estático moderno e responsivo para apresentação de trajetória profissional e acadêmica. Implementação de sistema multi-idioma (i18n), animações de scroll e design personalizado com foco em experiência do usuário.",
+        en: "Development of a modern, responsive static website for showcasing professional and academic trajectory. Implementation of a multi-language system (i18n), scroll animations, and custom design focused on user experience."
     },
 
     // ── Publicações ──
