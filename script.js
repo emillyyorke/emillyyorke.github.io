@@ -73,3 +73,41 @@ if (greeting) {
         greeting.style.transform = 'translateY(0)';
     }, 300);
 }
+
+/* ══════════════════════════════════════════
+   SISTEMA DE IDIOMAS (i18n)
+   ══════════════════════════════════════════ */
+
+let currentLang = localStorage.getItem('portfolio-lang') || 'pt';
+
+const langToggle = document.getElementById('langToggle');
+const langFlag   = document.getElementById('langFlag');
+const langCode   = document.getElementById('langCode');
+
+function applyLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem('portfolio-lang', lang);
+
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
+
+    if (lang === 'pt') {
+        langFlag.textContent = '🇧🇷';
+        langCode.textContent = 'PT';
+    } else {
+        langFlag.textContent = '🇺🇸';
+        langCode.textContent = 'EN';
+    }
+
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[key] && translations[key][lang]) {
+            el.textContent = translations[key][lang];
+        }
+    });
+}
+
+langToggle.addEventListener('click', () => {
+    applyLanguage(currentLang === 'pt' ? 'en' : 'pt');
+});
+
+applyLanguage(currentLang);
