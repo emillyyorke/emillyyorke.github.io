@@ -197,6 +197,33 @@ nav.scrolled {
     transition: 0.3s;
 }
 
+/* ── Botão de Troca de Idioma ── */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    border: 2px solid var(--border);
+    border-radius: 50px;
+    background: var(--white);
+    cursor: pointer;
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    transition: all 0.3s;
+    flex-shrink: 0;
+    margin-left: 8px;
+}
+.lang-toggle:hover {
+    border-color: var(--lilac-300);
+    background: var(--lilac-50);
+    color: var(--lilac-500);
+    transform: scale(1.05);
+}
+.lang-flag { font-size: 1rem; line-height: 1; }
+.lang-code { letter-spacing: 0.06em; }
+
 /* ══════════════════════════════════════════
    SEÇÕES (GERAL)
    ══════════════════════════════════════════ */
