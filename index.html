@@ -26,15 +26,21 @@
                 emilly.dev
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#formacao">Formação</a></li>
-                <li><a href="#experiencia">Experiência</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#publicacoes">Publicações</a></li>
-                <li><a href="#interesses">Interesses</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+                <li><a href="#formacao" data-i18n="nav_formacao">Formação</a></li>
+                <li><a href="#experiencia" data-i18n="nav_experiencia">Experiência</a></li>
+                <li><a href="#habilidades" data-i18n="nav_habilidades">Habilidades</a></li>
+                <li><a href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+                <li><a href="#publicacoes" data-i18n="nav_publicacoes">Publicações</a></li>
+                <li><a href="#interesses" data-i18n="nav_interesses">Interesses</a></li>
+                <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
             </ul>
+
+            <button class="lang-toggle" id="langToggle" title="Switch language">
+                <span class="lang-flag" id="langFlag">🇧🇷</span>
+                <span class="lang-code" id="langCode">PT</span>
+            </button>
+
             <button class="nav-toggle" id="navToggle" aria-label="Menu">
                 <span></span><span></span><span></span>
             </button>
@@ -48,21 +54,21 @@
         <div class="hero-grid">
             <div class="hero-text">
                 <p class="hero-greeting">
-                    <span class="wave">👋</span> Olá, seja bem-vindo(a)!
+                    <span class="wave">👋</span> <span data-i18n="hero_greeting">Olá, seja bem-vindo(a)!</span>
                 </p>
                 <h1 class="hero-name">Emilly<br>Yorke</h1>
                 <p class="hero-role">
-                    Graduanda em Ciência da Computação · 
+                    <span data-i18n="hero_role_prefix">Graduanda em Ciência da Computação</span> · 
                     <span class="highlight">Analista Field Service JR</span>
                 </p>
-                <p class="hero-desc">
+                <p class="hero-desc" data-i18n="hero_desc">
                     Explorando a área de tecnologia e sua incrível interdisciplinaridade, indo desde 
                     programção e desenvolvimento full-stack, a suporte técnico ao usuário, até a
                     minha paixão atual, a neurociência computacional.
                 </p>
                 <div class="hero-buttons">
-                    <a href="#projetos" class="btn btn-primary">Ver Projetos →</a>
-                    <a href="#contato" class="btn btn-outline">Entre em contato</a>
+                    <a href="#projetos" class="btn btn-primary" data-i18n="hero_btn_projects">Ver Projetos →</a>
+                    <a href="#contato" class="btn btn-outline" data-i18n="hero_btn_contact">Entre em contato</a>
                 </div>
             </div>
 
@@ -71,8 +77,6 @@
                     <div class="hero-photo-bg"></div>
                     <div class="hero-photo">
                         <img src="foto.jpg" alt="Emilly">
-
-                        <!-- Placeholder — remova quando adicionar a foto -->
                         <div class="hero-photo-placeholder">
                             <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -81,7 +85,6 @@
                             Sua foto aqui
                         </div>
                     </div>
-
                     <div class="float-badge top-right">
                         <div class="badge-icon lilac">🧠</div>
                         Neuro
@@ -92,7 +95,7 @@
                     </div>
                     <div class="float-badge bottom-right">
                         <div class="badge-icon pink">✨</div>
-                        Pesquisa
+                        <span data-i18n="badge_research">Pesquisa</span>
                     </div>
                 </div>
             </div>
@@ -106,22 +109,22 @@
         <div class="about-inner">
             <div class="about-grid">
                 <div class="reveal">
-                    <span class="section-label">Sobre mim</span>
+                    <span class="section-label" data-i18n="about_label">Sobre mim</span>
                     <div class="about-text">
-                        <p>
+                        <p data-i18n="about_p1">
                             Sou graduanda em Ciência da Computação na UERN, e minha trajetória 
                             na tecnologia é guiada pela interdisciplinaridade. Possuo mais de 3 anos 
                             de experiência em suporte técnico (N2) e infraestrutura de TI, onde obtive experiência
                             sólida e prática em resolução de problemas, manutenção de sistemas e suporte a usuários.
                         </p>
-                        <p>
+                        <p data-i18n="about_p2">
                             Além da infraestrutura, desenvolvo soluções Full Stack, dominando tecnologias 
                             como HTML, CSS, JavaScript, Python, frameworks, e banco de dados. Possuo habilidades
                             na construção de aplicações de ponta a ponta, desde a criação de interfaces responsivas até a lógica de 
                             backend e integração com bancos de dados, o que me permite unir agilidade técnica 
                             ao desenvolvimento de ferramentas robustas para simulação e análise de dados.
                         </p>
-                        <p>
+                        <p data-i18n="about_p3">
                             Tenho perfil analítico voltado para resolução de problemas e 
                             busco aplicar meus conhecimentos em programação para 
                             contribuir com projetos desafiadores na área de tecnologia.
@@ -133,23 +136,23 @@
                     <div class="about-highlights">
                         <div class="highlight-card">
                             <div class="h-icon">🎓</div>
-                            <div class="h-number">Cientista da Computação</div>
+                            <div class="h-number" data-i18n="about_h1">Cientista da Computação</div>
                             <div class="h-label">UERN</div>
                         </div>
                         <div class="highlight-card">
                             <div class="h-icon">⚙️</div>
-                            <div class="h-number">Suporte Técnico</div>
-                            <div class="h-label">N1 e N2</div>
+                            <div class="h-number" data-i18n="about_h2">Suporte Técnico</div>
+                            <div class="h-label" data-i18n="about_h2_label">N1 e N2</div>
                         </div>
                         <div class="highlight-card">
                             <div class="h-icon">👩🏻‍💻</div>
-                            <div class="h-number">Programação</div>
+                            <div class="h-number" data-i18n="about_h3">Programação</div>
                             <div class="h-label">Full Stack Developer</div>
                         </div>
                         <div class="highlight-card">
                             <div class="h-icon">⚡</div>
-                            <div class="h-number">Resolução de Problemas</div>
-                            <div class="h-label">Perfil Analítico</div>
+                            <div class="h-number" data-i18n="about_h4">Resolução de Problemas</div>
+                            <div class="h-label" data-i18n="about_h4_label">Perfil Analítico</div>
                         </div>
                     </div>
                 </div>
@@ -161,18 +164,16 @@
          FORMAÇÃO
          ═══════════════════════════════════ -->
     <section id="formacao">
-        <span class="section-label reveal">Formação</span>
-        <h2 class="section-title reveal">Trajetória acadêmica</h2>
-        <p class="section-subtitle reveal">Minha jornada de aprendizado e crescimento.</p>
+        <span class="section-label reveal" data-i18n="edu_label">Formação</span>
+        <h2 class="section-title reveal" data-i18n="edu_title">Trajetória acadêmica</h2>
+        <p class="section-subtitle reveal" data-i18n="edu_subtitle">Minha jornada de aprendizado e crescimento.</p>
 
         <div class="timeline reveal">
             <div class="timeline-item current">
-                <div class="timeline-date">2022 – Presente</div>
-                <div class="timeline-title">Bacharelado em Ciência da Computação</div>
-                <div class="timeline-place">Universidade do Estado do Rio Grande do Norte (UERN)</div>
-                <div class="timeline-desc">
-                    Previsão de conclusão: 2026.2.
-                </div>
+                <div class="timeline-date">2022 – <span data-i18n="present">Presente</span></div>
+                <div class="timeline-title" data-i18n="edu_degree">Bacharelado em Ciência da Computação</div>
+                <div class="timeline-place" data-i18n="edu_place">Universidade do Estado do Rio Grande do Norte (UERN)</div>
+                <div class="timeline-desc" data-i18n="edu_desc">Previsão de conclusão: 2026.2.</div>
             </div>
         </div>
     </section>
@@ -182,12 +183,11 @@
          ═══════════════════════════════════ -->
     <section id="experiencia">
         <div class="experiencia-inner">
-        <span class="section-label reveal">Experiência</span>
-        <h2 class="section-title reveal">Experiência profissional</h2>
-        <p class="section-subtitle reveal">Onde apliquei meus conhecimentos na prática.</p>
+        <span class="section-label reveal" data-i18n="exp_label">Experiência</span>
+        <h2 class="section-title reveal" data-i18n="exp_title">Experiência profissional</h2>
+        <p class="section-subtitle reveal" data-i18n="exp_subtitle">Onde apliquei meus conhecimentos na prática.</p>
 
         <div class="experience-list">
-            <!-- ✏️ Experiência 1 — Atual -->
             <div class="exp-card reveal">
                 <div class="exp-side">
                     <div class="exp-icon-box lilac-bg">⚙️</div>
@@ -196,30 +196,23 @@
                 <div class="exp-content">
                     <div class="exp-header">
                         <div>
-                            <span class="exp-date">Atual</span>
+                            <span class="exp-date" data-i18n="exp_current">Atual</span>
                             <h3 class="exp-role">Analista Field Service JR</h3>
                             <p class="exp-company">Strati · Natal, RN</p>
                         </div>
-                        <span class="exp-badge current-badge">Atual</span>
+                        <span class="exp-badge current-badge" data-i18n="exp_current_badge">Atual</span>
                     </div>
-                    <p class="exp-desc">
-                        Presto suporte geral a usuários em ambientes
-                        Windows.
-                        Administro e dou suporte a servidores Windows (instalação, configuração e manutenção).
-                        Apoio a administração do ambiente, incluindo sistemas e serviços baseados em Windows.
-                        Garanto a disponibilidade de serviços de e-mail, compartilhamento de dados e aplicações essenciais.
-                        Realizo manutenções e análises em equipamentos, incluindo provisionamento de novos dispositivos.
-                        Executo checklists regulares e acompanho acionamentos críticos.
+                    <p class="exp-desc" data-i18n="exp1_desc">
+                        Presto suporte geral a usuários em ambientes Windows. Administro e dou suporte a servidores Windows (instalação, configuração e manutenção). Apoio a administração do ambiente, incluindo sistemas e serviços baseados em Windows. Garanto a disponibilidade de serviços de e-mail, compartilhamento de dados e aplicações essenciais. Realizo manutenções e análises em equipamentos, incluindo provisionamento de novos dispositivos. Executo checklists regulares e acompanho acionamentos críticos.
                     </p>
                     <div class="exp-tags">
-                        <span class="skill-tag">Suporte N2</span>
+                        <span class="skill-tag" data-i18n="tag_suporte_n2">Suporte N2</span>
                         <span class="skill-tag">Software</span>
                         <span class="skill-tag">Field Service</span>
                     </div>
                 </div>
             </div>
 
-            <!-- ✏️ Experiência 2 -->
             <div class="exp-card reveal">
                 <div class="exp-side">
                     <div class="exp-icon-box blue-bg">💻</div>
@@ -228,29 +221,25 @@
                 <div class="exp-content">
                     <div class="exp-header">
                         <div>
-                            <span class="exp-date">Novembro/2024 – Março/2026</span>
-                            <h3 class="exp-role">Técnica em Suporte Técnico/Helpdesk</h3>
+                            <span class="exp-date" data-i18n="exp2_date">Novembro/2024 – Março/2026</span>
+                            <h3 class="exp-role" data-i18n="exp2_role">Técnica em Suporte Técnico/Helpdesk</h3>
                             <p class="exp-company">DATAPREV · Natal, RN</p>
                         </div>
                     </div>
-                    <p class="exp-desc">
-                        Atuação autônoma no gerenciamento de chamados, garantindo o cumprimento dos SLAs, e na prestação de suporte técnico para uma base de aproximadamente 200 usuários, sendo o principal ponto de contato para a resolução de problemas de hardware, software e redes na unidade do RN da empresa.
-                        Fui responsável pela instalação e configuração completa de estações de trabalho, incluindo sistemas operacionais (Windows e Linux) e softwares corporativos.
-                        Realizei a execução de rotinas de atualização de sistemas e monitoramento de redes e servidores para garantir a estabilidade e segurança do ambiente.
-
+                    <p class="exp-desc" data-i18n="exp2_desc">
+                        Atuação autônoma no gerenciamento de chamados, garantindo o cumprimento dos SLAs, e na prestação de suporte técnico para uma base de aproximadamente 200 usuários, sendo o principal ponto de contato para a resolução de problemas de hardware, software e redes na unidade do RN da empresa. Fui responsável pela instalação e configuração completa de estações de trabalho, incluindo sistemas operacionais (Windows e Linux) e softwares corporativos. Realizei a execução de rotinas de atualização de sistemas e monitoramento de redes e servidores para garantir a estabilidade e segurança do ambiente.
                     </p>
                     <div class="exp-tags">
-                        <span class="skill-tag">Suporte N2</span>
+                        <span class="skill-tag" data-i18n="tag_suporte_n2">Suporte N2</span>
                         <span class="skill-tag">Helpdesk</span>
-                        <span class="skill-tag">Remoto</span>
-                        <span class="skill-tag">Infraestrutura</span>
+                        <span class="skill-tag" data-i18n="tag_remoto">Remoto</span>
+                        <span class="skill-tag" data-i18n="tag_infra">Infraestrutura</span>
                         <span class="skill-tag">Software</span>
-                        <span class="skill-tag">Rede e VPN</span>
+                        <span class="skill-tag" data-i18n="tag_rede_vpn">Rede e VPN</span>
                     </div>
                 </div>
             </div>
 
-            <!-- ✏️ Experiência 3 -->
             <div class="exp-card reveal">
                 <div class="exp-side">
                     <div class="exp-icon-box pink-bg">🔬</div>
@@ -258,22 +247,19 @@
                 <div class="exp-content">
                     <div class="exp-header">
                         <div>
-                            <span class="exp-date">Julho/2023 – Outubro/2024</span>
-                            <h3 class="exp-role">Especialista em Suporte Técnico</h3>
+                            <span class="exp-date" data-i18n="exp3_date">Julho/2023 – Outubro/2024</span>
+                            <h3 class="exp-role" data-i18n="exp3_role">Especialista em Suporte Técnico</h3>
                             <p class="exp-company">UERN · Natal, RN</p>
                         </div>
                     </div>
-                    <p class="exp-desc">
-                        Colaborei na implantação e implementação de novos sistemas de suporte ao usuário.
-                        Atuei na resolução de problemas de sistemas e prestei suporte à infraestrutura de TI para todos os funcionários e alunos da UERN Campus de Natal.
-                        Realizei a manutenção preventiva e corretiva de equipamentos e ofereci suporte em redes para garantir a continuidade das operações.
+                    <p class="exp-desc" data-i18n="exp3_desc">
+                        Colaborei na implantação e implementação de novos sistemas de suporte ao usuário. Atuei na resolução de problemas de sistemas e prestei suporte à infraestrutura de TI para todos os funcionários e alunos da UERN Campus de Natal. Realizei a manutenção preventiva e corretiva de equipamentos e ofereci suporte em redes para garantir a continuidade das operações.
                     </p>
                     <div class="exp-tags">
-                        <span class="skill-tag">Suporte N1</span>
-                        <span class="skill-tag">Infraestrutura</span>
-                        <span class="skill-tag">Redes</span>
+                        <span class="skill-tag" data-i18n="tag_suporte_n1">Suporte N1</span>
+                        <span class="skill-tag" data-i18n="tag_infra">Infraestrutura</span>
+                        <span class="skill-tag" data-i18n="tag_redes">Redes</span>
                         <span class="skill-tag">Software</span>
-
                     </div>
                 </div>
             </div>
@@ -285,9 +271,9 @@
          HABILIDADES
          ═══════════════════════════════════ -->
     <section id="habilidades">
-        <span class="section-label reveal">Habilidades</span>
-        <h2 class="section-title reveal">Ferramentas & Tecnologias</h2>
-        <p class="section-subtitle reveal">As tecnologias e ferramentas que uso no dia a dia.</p>
+        <span class="section-label reveal" data-i18n="skills_label">Habilidades</span>
+        <h2 class="section-title reveal" data-i18n="skills_title">Ferramentas & Tecnologias</h2>
+        <p class="section-subtitle reveal" data-i18n="skills_subtitle">As tecnologias e ferramentas que uso no dia a dia.</p>
 
         <div class="skills-grid">
             <div class="skill-category reveal">
@@ -302,7 +288,6 @@
                     <span class="skill-tag">React.js</span>
                 </div>
             </div>
-
             <div class="skill-category reveal">
                 <div class="skill-cat-header">
                     <div class="skill-cat-icon blue-bg">⚙️</div>
@@ -315,11 +300,10 @@
                     <span class="skill-tag">API Restful</span>
                 </div>
             </div>
-
             <div class="skill-category reveal">
                 <div class="skill-cat-header">
                     <div class="skill-cat-icon mint-bg">🗄️</div>
-                    <div class="skill-cat-name">Banco de Dados</div>
+                    <div class="skill-cat-name" data-i18n="cat_db">Banco de Dados</div>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">PostgreSQL</span>
@@ -327,49 +311,46 @@
                     <span class="skill-tag">MySQL</span>
                 </div>
             </div>
-
             <div class="skill-category reveal">
                 <div class="skill-cat-header">
                     <div class="skill-cat-icon blue-bg">🌐</div>
-                    <div class="skill-cat-name">Infra & Redes</div>
+                    <div class="skill-cat-name" data-i18n="cat_infra">Infra & Redes</div>
                 </div>
                 <div class="skill-tags">
-                    <span class="skill-tag">Suporte N1/N2</span>
+                    <span class="skill-tag" data-i18n="tag_suporte_n1n2">Suporte N1/N2</span>
                     <span class="skill-tag">HelpDesk</span>
-                    <span class="skill-tag">Suporte a redes</span>
-                    <span class="skill-tag">Internet e VPN</span>
-                    <span class="skill-tag">Monitoramento de servidores</span>
-                    <span class="skill-tag">Manutenção de Hardware</span>
+                    <span class="skill-tag" data-i18n="tag_suporte_redes">Suporte a redes</span>
+                    <span class="skill-tag" data-i18n="tag_internet_vpn">Internet e VPN</span>
+                    <span class="skill-tag" data-i18n="tag_monit_serv">Monitoramento de servidores</span>
+                    <span class="skill-tag" data-i18n="tag_manut_hw">Manutenção de Hardware</span>
                 </div>
             </div>
-
             <div class="skill-category reveal">
                 <div class="skill-cat-header">
                     <div class="skill-cat-icon pink-bg">🛠️</div>
-                    <div class="skill-cat-name">Ferramentas</div>
+                    <div class="skill-cat-name" data-i18n="cat_tools">Ferramentas</div>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Git / GitHub</span>
                     <span class="skill-tag">Figma</span>
                     <span class="skill-tag">npm</span>
                     <span class="skill-tag">Excel</span>
-                    <span class="skill-tag">Pacote Office</span>
+                    <span class="skill-tag" data-i18n="tag_office">Pacote Office</span>
                     <span class="skill-tag">Zendesk</span>
                     <span class="skill-tag">Service Now</span>
-                    <span class="skill-tag">Ferramentas de helpdesk</span>
+                    <span class="skill-tag" data-i18n="tag_helpdesk_tools">Ferramentas de helpdesk</span>
                 </div>
             </div>
-
             <div class="skill-category reveal">
                 <div class="skill-cat-header">
                     <div class="skill-cat-icon mint-bg">📊</div>
-                    <div class="skill-cat-name">Dados & Análise</div>
+                    <div class="skill-cat-name" data-i18n="cat_data">Dados & Análise</div>
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">Pandas</span>
-                    <span class="skill-tag">Análise de Sinais</span>
-                    <span class="skill-tag">Visualização</span>
-                    <span class="skill-tag">Estatística</span>
+                    <span class="skill-tag" data-i18n="tag_sinais">Análise de Sinais</span>
+                    <span class="skill-tag" data-i18n="tag_viz">Visualização</span>
+                    <span class="skill-tag" data-i18n="tag_stats">Estatística</span>
                 </div>
             </div>
         </div> 
@@ -379,9 +360,9 @@
          PROJETOS
          ═══════════════════════════════════ -->
     <section id="projetos">
-        <span class="section-label reveal">Projetos</span>
-        <h2 class="section-title reveal">O que tenho construído</h2>
-        <p class="section-subtitle reveal">Projetos acadêmicos, de pesquisa e pessoais.</p>
+        <span class="section-label reveal" data-i18n="proj_label">Projetos</span>
+        <h2 class="section-title reveal" data-i18n="proj_title">O que tenho construído</h2>
+        <p class="section-subtitle reveal" data-i18n="proj_subtitle">Projetos acadêmicos, de pesquisa e pessoais.</p>
 
         <div class="projects-grid">
             <div class="project-card reveal">
@@ -391,12 +372,12 @@
                 </div>
                 <div class="project-body">
                     <div class="project-tags-row">
-                        <span class="project-tag lilac">Neurociência</span>
+                        <span class="project-tag lilac" data-i18n="tag_neuro">Neurociência</span>
                         <span class="project-tag blue">Python</span>
                         <span class="project-tag mint">Brian2</span>
                     </div>
-                    <h3 class="project-title">Modelo LIF de Atividade Episódica com STDP</h3>
-                    <p class="project-desc">
+                    <h3 class="project-title" data-i18n="proj1_title">Modelo LIF de Atividade Episódica com STDP</h3>
+                    <p class="project-desc" data-i18n="proj1_desc">
                         Replicação do modelo Tabak, Mascagni & Bertram (2010) em Brian2 
                         com implementação de plasticidade STDP via flag toggle. Análise 
                         dos efeitos da plasticidade em redes neurais em desenvolvimento.
@@ -419,7 +400,7 @@
                         <span class="project-tag lilac">JS</span>
                     </div>
                     <h3 class="project-title">Landing Page: Dr. Raul Paradeda</h3>
-                    <p class="project-desc">
+                    <p class="project-desc" data-i18n="proj2_desc">
                         Desenvolvimento de landing page profissional para apresentação de 
                         trajetória acadêmica e publicações científicas. Foco em design 
                         limpo, responsividade e organização de portfólio de pesquisa.
@@ -439,11 +420,11 @@
                 <div class="project-body">
                     <div class="project-tags-row">
                         <span class="project-tag blue">Python</span>
-                        <span class="project-tag mint">Automação</span>
+                        <span class="project-tag mint" data-i18n="tag_automacao">Automação</span>
                         <span class="project-tag pink">Scraping</span>
                     </div>
-                    <h3 class="project-title">Alerta de Vagas Automatizado</h3>
-                    <p class="project-desc">
+                    <h3 class="project-title" data-i18n="proj3_title">Alerta de Vagas Automatizado</h3>
+                    <p class="project-desc" data-i18n="proj3_desc">
                         Script em Python desenvolvido para monitorar oportunidades de emprego 
                         em tempo real. O sistema utiliza técnicas de web scraping para 
                         coletar dados e enviar notificações automáticas, otimizando o 
@@ -466,8 +447,8 @@
                         <span class="project-tag blue">Node.js</span>
                         <span class="project-tag mint">Back-end</span>
                     </div>
-                    <h3 class="project-title">API GraphQL: Sistema de Biblioteca</h3>
-                    <p class="project-desc">
+                    <h3 class="project-title" data-i18n="proj4_title">API GraphQL: Sistema de Biblioteca</h3>
+                    <p class="project-desc" data-i18n="proj4_desc">
                         Desenvolvimento de uma API moderna utilizando GraphQL para gestão 
                         eficiente de um acervo de biblioteca. Implementação de consultas 
                         flexíveis e mutações para autores e livros, com foco em performance 
@@ -485,32 +466,29 @@
          PUBLICAÇÕES
          ═══════════════════════════════════ -->
     <section id="publicacoes">
-        <span class="section-label reveal">Publicações</span>
-        <h2 class="section-title reveal">Produção científica</h2>
-        <p class="section-subtitle reveal">Artigos, resumos e contribuições acadêmicas.</p>
+        <span class="section-label reveal" data-i18n="pub_label">Publicações</span>
+        <h2 class="section-title reveal" data-i18n="pub_title">Produção científica</h2>
+        <p class="section-subtitle reveal" data-i18n="pub_subtitle">Artigos, resumos e contribuições acadêmicas.</p>
 
         <div class="pub-list">
             <div class="pub-card reveal">
                 <div class="pub-icon-box lilac">📄</div>
                 <div>
-                    <div class="pub-type">TCC — Em andamento</div>
-                    <div class="pub-title">
-                        Efeitos da plasticidade sináptica nas dinâmicas de redes neurais em desenvolvimento
-                    </div>
-                    <div class="pub-authors">Emilly Yorke · Orientador: Dr. Wilfredo Blanco Figuerola</div>
-                    <div class="pub-venue">UERN — Departamento de Ciência da Computação, 2025/2026</div>
+                    <div class="pub-type" data-i18n="pub1_type">TCC — Em andamento</div>
+                    <div class="pub-title" data-i18n="pub1_title">Efeitos da plasticidade sináptica nas dinâmicas de redes neurais em desenvolvimento</div>
+                    <div class="pub-authors" data-i18n="pub1_authors">Emilly Yorke · Orientador: Dr. Wilfredo Blanco Figuerola</div>
+                    <div class="pub-venue" data-i18n="pub1_venue">UERN — Departamento de Ciência da Computação, 2025/2026</div>
                 </div>
             </div>
 
             <div class="pub-card reveal">
                 <div class="pub-icon-box blue">📝</div>
                 <div>
-                    <div class="pub-type">Artigo</div>
-                    <div class="pub-title">Timing Matters: Comparing the Effects of Immediate,
-                    Delayed, and No Feedback on User Trust in Interactive Systems</div>
+                    <div class="pub-type" data-i18n="pub2_type">Artigo</div>
+                    <div class="pub-title">Timing Matters: Comparing the Effects of Immediate, Delayed, and No Feedback on User Trust in Interactive Systems</div>
                     <div class="pub-authors">Maria Klara Brito Sena, Emilly Yorke Araujo Lima, Raul Benites Paradeda</div>
-                    <div class="pub-venue">Simpósio Brasileiro de Computação Ubíqua e Pervasiva , 2025</div>
-                    <a href="https://sol.sbc.org.br/index.php/sbcup/article/view/36134" class="pub-link">Ver publicação →</a>
+                    <div class="pub-venue" data-i18n="pub2_venue">Simpósio Brasileiro de Computação Ubíqua e Pervasiva, 2025</div>
+                    <a href="https://sol.sbc.org.br/index.php/sbcup/article/view/36134" class="pub-link" data-i18n="pub_link">Ver publicação →</a>
                 </div>
             </div>
         </div>
@@ -520,40 +498,40 @@
          ÁREAS DE INTERESSE
          ═══════════════════════════════════ -->
     <section id="interesses">
-        <span class="section-label reveal">Áreas de Interesse</span>
-        <h2 class="section-title reveal">O que me fascina</h2>
-        <p class="section-subtitle reveal">Temas que guiam minha curiosidade e pesquisa.</p>
+        <span class="section-label reveal" data-i18n="int_label">Áreas de Interesse</span>
+        <h2 class="section-title reveal" data-i18n="int_title">O que me fascina</h2>
+        <p class="section-subtitle reveal" data-i18n="int_subtitle">Temas que guiam minha curiosidade e pesquisa.</p>
 
         <div class="interests-grid">
             <div class="interest-card reveal">
                 <div class="interest-icon">🧠</div>
-                <div class="interest-name">Neurociência Computacional</div>
-                <div class="interest-sub">Modelagem de circuitos neurais</div>
+                <div class="interest-name" data-i18n="int1_name">Neurociência Computacional</div>
+                <div class="interest-sub" data-i18n="int1_sub">Modelagem de circuitos neurais</div>
             </div>
             <div class="interest-card reveal">
                 <div class="interest-icon">⚡</div>
-                <div class="interest-name">Desenvolvimento Full Stack</div>
-                <div class="interest-sub">Programação web e mobile</div>
+                <div class="interest-name" data-i18n="int2_name">Desenvolvimento Full Stack</div>
+                <div class="interest-sub" data-i18n="int2_sub">Programação web e mobile</div>
             </div>
             <div class="interest-card reveal">
                 <div class="interest-icon">🤖</div>
-                <div class="interest-name">Inteligência Artificial</div>
-                <div class="interest-sub">Redes neurais & deep learning</div>
+                <div class="interest-name" data-i18n="int3_name">Inteligência Artificial</div>
+                <div class="interest-sub" data-i18n="int3_sub">Redes neurais & deep learning</div>
             </div>
             <div class="interest-card reveal">
                 <div class="interest-icon">📊</div>
-                <div class="interest-name">Ciência de Dados</div>
-                <div class="interest-sub">Análise & visualização</div>
+                <div class="interest-name" data-i18n="int4_name">Ciência de Dados</div>
+                <div class="interest-sub" data-i18n="int4_sub">Análise & visualização</div>
             </div>
             <div class="interest-card reveal">
                 <div class="interest-icon">🔬</div>
-                <div class="interest-name">Neurociência do Desenvolvimento</div>
-                <div class="interest-sub">Formação de circuitos neurais</div>
+                <div class="interest-name" data-i18n="int5_name">Neurociência do Desenvolvimento</div>
+                <div class="interest-sub" data-i18n="int5_sub">Formação de circuitos neurais</div>
             </div>
             <div class="interest-card reveal">
                 <div class="interest-icon">💡</div>
-                <div class="interest-name">Sistemas Complexos</div>
-                <div class="interest-sub">Dinâmicas emergentes</div>
+                <div class="interest-name" data-i18n="int6_name">Sistemas Complexos</div>
+                <div class="interest-sub" data-i18n="int6_sub">Dinâmicas emergentes</div>
             </div>
         </div>
     </section>
@@ -563,9 +541,9 @@
          ═══════════════════════════════════ -->
     <section id="contato">
         <div class="contact-inner">
-            <span class="section-label reveal">Contato</span>
-            <h2 class="section-title reveal">Vamos conversar?</h2>
-            <p class="section-subtitle reveal" style="margin: 0 auto 40px; text-align: center;">
+            <span class="section-label reveal" data-i18n="contact_label">Contato</span>
+            <h2 class="section-title reveal" data-i18n="contact_title">Vamos conversar?</h2>
+            <p class="section-subtitle reveal" style="margin: 0 auto 40px; text-align: center;" data-i18n="contact_subtitle">
                 Adoraria trocar ideias sobre neurociência computacional, 
                 colaborações acadêmicas ou projetos!
             </p>
@@ -595,10 +573,11 @@
 
     <!-- FOOTER -->
     <footer>
-        Feito por Emilly Yorke · 2026
+        <span data-i18n="footer_made">Feito por</span> Emilly Yorke · 2026
     </footer>
 
     <!-- Scripts -->
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
