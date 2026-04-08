@@ -134,6 +134,12 @@ const translations = {
         pt: "Desenvolvimento de um site estático moderno e responsivo para apresentação de trajetória profissional e acadêmica. Implementação de sistema multi-idioma (i18n), animações de scroll e design personalizado com foco em experiência do usuário.",
         en: "Development of a modern, responsive static website for showcasing professional and academic trajectory. Implementation of a multi-language system (i18n), scroll animations, and custom design focused on user experience."
     },
+    proj6_title: { pt: "HelpDesk: Sistema de Chamados", en: "HelpDesk: Ticketing System" },
+    proj6_desc: {
+        pt: "Sistema full-stack de gerenciamento de chamados de suporte técnico, com autenticação JWT, três níveis de permissão, controle de SLA, notificações por e-mail e base de conhecimento com upload de arquivos. Backend em FastAPI com PostgreSQL e frontend em JavaScript puro.",
+        en: "Full-stack technical support ticketing system, featuring JWT authentication, three permission levels, SLA tracking, email notifications, and a knowledge base with file uploads. Backend built with FastAPI and PostgreSQL; frontend in vanilla JavaScript."
+    },
+    tag_fullstack: { pt: "Full-Stack", en: "Full-Stack" },
 
     // ── Publicações ──
     pub_label:    { pt: "Publicações",         en: "Publications" },
