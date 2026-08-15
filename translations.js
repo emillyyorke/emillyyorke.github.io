@@ -15,7 +15,7 @@ const translations = {
 
     // ── Hero ──
     hero_greeting:    { pt: "Olá, seja bem-vindo(a)!", en: "Hi, welcome!" },
-    hero_role_prefix: { pt: "Graduanda em Ciência da Computação", en: "Computer Science Student" },
+    hero_role_prefix: { pt: "Bacharela em Ciência da Computação", en: "Bachelor of Computer Science" },
     hero_desc: {
         pt: "Explorando a área de tecnologia e sua incrível interdisciplinaridade, indo desde programação e desenvolvimento full-stack, a suporte técnico ao usuário, até a minha paixão atual, a neurociência computacional.",
         en: "Exploring the technology field and its incredible interdisciplinarity, from programming and full-stack development to technical user support, and my current passion — computational neuroscience."
@@ -27,8 +27,8 @@ const translations = {
     // ── Sobre ──
     about_label: { pt: "Sobre mim", en: "About me" },
     about_p1: {
-        pt: "Sou graduanda em Ciência da Computação na UERN, e minha trajetória na tecnologia é guiada pela interdisciplinaridade. Possuo mais de 3 anos de experiência em suporte técnico (N2) e infraestrutura de TI, onde obtive experiência sólida e prática em resolução de problemas, manutenção de sistemas e suporte a usuários.",
-        en: "I'm an undergraduate Computer Science student at UERN, and my journey in technology is guided by interdisciplinarity. I have over 3 years of experience in technical support (L2) and IT infrastructure, where I gained solid, hands-on experience in problem-solving, system maintenance, and user support."
+        pt: "Sou bacharela em Ciência da Computação pela UERN, e minha trajetória na tecnologia é guiada pela interdisciplinaridade. Possuo mais de 3 anos de experiência em suporte técnico (N2) e infraestrutura de TI, onde obtive experiência sólida e prática em resolução de problemas, manutenção de sistemas e suporte a usuários.",
+        en: "I hold a Bachelor's degree in Computer Science from UERN, and my journey in technology is guided by interdisciplinarity. I have over 3 years of experience in technical support (L2) and IT infrastructure, where I gained solid, hands-on experience in problem-solving, system maintenance, and user support."
     },
     about_p2: {
         pt: "Além da infraestrutura, desenvolvo soluções Full Stack, dominando tecnologias como HTML, CSS, JavaScript, Python, frameworks, e banco de dados. Possuo habilidades na construção de aplicações de ponta a ponta, desde a criação de interfaces responsivas até a lógica de backend e integração com bancos de dados, o que me permite unir agilidade técnica ao desenvolvimento de ferramentas robustas para simulação e análise de dados.",
@@ -52,7 +52,7 @@ const translations = {
     present:      { pt: "Presente",           en: "Present" },
     edu_degree:   { pt: "Bacharelado em Ciência da Computação", en: "Bachelor's in Computer Science" },
     edu_place:    { pt: "Universidade do Estado do Rio Grande do Norte (UERN)", en: "State University of Rio Grande do Norte (UERN)" },
-    edu_desc:     { pt: "Previsão de conclusão: 2026.2.", en: "Expected graduation: 2026.2." },
+    edu_desc:     { pt: "Concluído em agosto de 2026.", en: "Completed in August 2026." },
 
     // ── Experiência ──
     exp_label:        { pt: "Experiência",              en: "Experience" },
@@ -145,13 +145,18 @@ const translations = {
     pub_label:    { pt: "Publicações",         en: "Publications" },
     pub_title:    { pt: "Produção científica", en: "Scientific production" },
     pub_subtitle: { pt: "Artigos, resumos e contribuições acadêmicas.", en: "Papers, abstracts, and academic contributions." },
-    pub1_type:    { pt: "TCC — Em andamento",  en: "Thesis — In progress" },
+    pub1_type:    { pt: "TCC — Concluído",  en: "Thesis — Completed" },
     pub1_title:   { pt: "Efeitos da plasticidade sináptica nas dinâmicas de redes neurais em desenvolvimento", en: "Effects of synaptic plasticity on the dynamics of developing neural networks" },
     pub1_authors: { pt: "Emilly Yorke · Orientador: Dr. Wilfredo Blanco Figuerola", en: "Emilly Yorke · Advisor: Dr. Wilfredo Blanco Figuerola" },
     pub1_venue:   { pt: "UERN — Departamento de Ciência da Computação, 2025/2026", en: "UERN — Computer Science Department, 2025/2026" },
+    pub1_desc: {
+        pt: "Implementação em Python com o simulador Brian 2 de uma rede de neurônios Leaky Integrate-and-Fire (LIF), replicando o modelo de Tabak et al. (2010) para atividade episódica espontânea e investigando como a Plasticidade Sináptica Dependente do Tempo de Disparo (STDP) reorganiza os pesos sinápticos e suprime esse regime ao longo do tempo.",
+        en: "A Python implementation using the Brian 2 simulator of a Leaky Integrate-and-Fire (LIF) neuron network, replicating the Tabak et al. (2010) model for spontaneous episodic activity and investigating how Spike-Timing-Dependent Plasticity (STDP) reorganizes synaptic weights and suppresses this regime over time."
+    },
     pub2_type:    { pt: "Artigo",  en: "Paper" },
     pub2_venue:   { pt: "Simpósio Brasileiro de Computação Ubíqua e Pervasiva, 2025", en: "Brazilian Symposium on Ubiquitous and Pervasive Computing, 2025" },
     pub_link:     { pt: "Ver publicação →", en: "View publication →" },
+    pub1_link:    { pt: "Ler TCC (PDF) →", en: "Read Thesis (PDF) →" },
 
     // ── Interesses ──
     int_label:    { pt: "Áreas de Interesse",  en: "Areas of Interest" },
